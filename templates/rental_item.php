@@ -1,5 +1,5 @@
-<? foreach ($rentals as $rental) { ?>
-<? $rate = $rental["rate_by_" . $rental["mode"]]; ?>
+<?php foreach ($rentals as $rental) { ?>
+<?php $rate = $rental["rate_by_" . $rental["mode"]]; ?>
 <div class="col-md-4">
     <div class="panel panel-default">
         <div class="panel-body text-center">
@@ -19,4 +19,4 @@
         </div>
     </div>
 </div>
-<? } ?>
+<?php } ?>

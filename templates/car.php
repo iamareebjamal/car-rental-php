@@ -1,4 +1,4 @@
-<? function getColor($stock) {
+<?php function getColor($stock) {
     $color = 'danger';
 
     if($stock > 50){
@@ -11,13 +11,13 @@
 }
 ?>
 
-<? if(!isset($car) || $car == null) { ?>
+<?php if(!isset($car) || $car == null) { ?>
     <div class="panel panel-default" style="background-color: #ff333b">
         <div class="panel-body text-center">
             <h3 class="lead" style="color: #ffccc6">No car with this ID found!</h3>
         </div>
     </div>
-<? } else { ?>
+<?php } else { ?>
     <div class="panel panel-default">
         <div class="panel-body text-center">
             <h5><?= $car['name'] ?></h5>
@@ -47,19 +47,19 @@
                 </div>
             </div>
 
-            <?
+            <?php
             $stock = $car['stock'];
             $color = getColor($stock);
             ?>
 
             <?= "<h5 class=\"text-$color\" >Stock : $stock</h5>"; ?>
-            <? if ($loginInfo != 0) { ?>
-                <? if ($stock == 0) $disable = "disabled"; else $disable = ""; ?>
+            <?php if ($loginInfo != 0) { ?>
+                <?php if ($stock == 0) $disable = "disabled"; else $disable = ""; ?>
 
                 <a href="/rent/<?= $car['_id'] ?>" class="btn btn-<?=$color . " " . $disable?>">Rent</a>
-            <? } else { ?>
+            <?php } else { ?>
                 <h6>Sign In/Register to rent cars!</h6>
-            <? } ?>
+            <?php } ?>
         </div>
     </div>
-<? } ?>
+<?php } ?>

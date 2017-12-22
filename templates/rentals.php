@@ -1,4 +1,4 @@
-<? if($loginInfo == 0) {
+<?php if($loginInfo == 0) {
     include_once('../templates/logout.php');
 } else { ?>
     <div class="panel panel-default">
@@ -8,14 +8,14 @@
             </div>
         </div>
     </div>
-    <? if(!isset($rentals) || count($rentals) == 0) { ?>
+    <?php if(!isset($rentals) || count($rentals) == 0) { ?>
         <div class="panel panel-default" style="background-color: #ff333b">
             <div class="panel-body text-center">
                 <h3 class="lead" style="color: #ffccc6">You have not rented any car!</h3>
             </div>
         </div>
-    <? } else {
+    <?php } else {
         include_once('../templates/rental_item.php');
     } ?>
 
-<? } ?>
+<?php } ?>

@@ -1,4 +1,4 @@
-<? if ($loginInfo == 0) {
+<?php if ($loginInfo == 0) {
     include_once('../templates/logout.php');
 } else { ?>
     <div class="panel panel-default">
@@ -51,6 +51,6 @@
         </div>
     </div>
 
-    <? if($admin) include_once('../templates/rental_item.php')?>
+    <?php if($admin) include_once('../templates/rental_item.php')?>
 
-<? } ?>
+<?php } ?>

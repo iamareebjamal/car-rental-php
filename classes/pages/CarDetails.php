@@ -12,7 +12,6 @@ class CarDetails extends BasicPage {
     public function render() {
         $this->setTitle('Car');
 
-
         Renderer::render("car.php", [
             'car' => RentalService::getCarDetails($this->car_id)
         ]);

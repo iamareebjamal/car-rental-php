@@ -21,4 +21,4 @@
 </head>
 <body>
 
-<? require_once('../templates/components/navbar.php') ?>
+<?php require_once('../templates/components/navbar.php') ?>

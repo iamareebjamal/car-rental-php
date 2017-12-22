@@ -1,20 +1,20 @@
 <div class="col-lg-2"></div>
 <div class="panel panel-default col-lg-8">
     <div class="panel-body">
-        <? if($loginInfo == 0) { ?>
+        <?php if($loginInfo == 0) { ?>
         <form class="form-horizontal" method="post" action="">
             <fieldset>
                 <legend>Sign In</legend>
                 <div class="form-group">
                     <label for="inputUsername" class="col-lg-2 control-label">Username</label>
                     <div class="col-lg-10">
-                        <? echo "<input type='text' class='form-control' name='username' value='" . @$values["username"] . "' placeholder='Username/Email' >" ?>
+                        <?php echo "<input type='text' class='form-control' name='username' value='" . @$values["username"] . "' placeholder='Username/Email' >" ?>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="inputFirstPassword" class="col-lg-2 control-label">Password</label>
                     <div class="col-lg-10">
-                        <? echo "<input type='password' class='form-control' id='password' name='password' value='" . @$values["password"] . "' placeholder='Password' >" ?>
+                        <?php echo "<input type='password' class='form-control' id='password' name='password' value='" . @$values["password"] . "' placeholder='Password' >" ?>
                         <div class="checkbox">
                             <label><input type="checkbox" onchange="document.getElementById('password').type = this.checked ? 'text' : 'password'"> Show Password</label>
                         </div>
@@ -29,7 +29,7 @@
             </fieldset>
         </form>
         <br>
-        <?
+        <?php
         if(isset($errors)) {
             foreach ($errors as $error) {
                 echo "<div class=\"alert alert-dismissible alert-danger fade in\">\n" .
@@ -46,9 +46,9 @@
                 "</div>\n";
         }
         ?>
-        <? } else { ?>
+        <?php } else { ?>
             <h3 class="lead">You are signed in!</h3>
-        <? } ?>
+        <?php } ?>
     </div>
 </div>
 <div class="col-lg-2"></div>

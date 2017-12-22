@@ -16,13 +16,13 @@
                 <li><a href="/rentals">Rentals</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <? if($loginInfo == 0) { ?>
+                <?php if($loginInfo == 0) { ?>
                     <li ><a id = "register-link" href = "/register" ><button style = "margin-top: -7px; margin-bottom: -7px; margin-right: -20px""  class="btn btn-primary" >Register</button ></a ></li >
                     <li ><a id = "signin-link" href = "/signin" ><button style = "margin-top: -7px; margin-bottom: -7px;" class="btn btn-info" >Signin</button ></a ></li >
-                <? } else { ?>
+                <?php } else { ?>
                     <li ><a id = "logout-link" href = "/profile" ><button style = "margin-top: -7px; margin-bottom: -7px; margin-right: -20px"  class="btn btn-info" >Profile</button ></a ></li >
                     <li ><a id = "logout-link" href = "/logout" ><button style = "margin-top: -7px; margin-bottom: -7px;"  class="btn btn-danger" >Logout</button ></a ></li >
-                <? } ?>
+                <?php } ?>
             </ul>
         </div>
     </div>

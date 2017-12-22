@@ -1,4 +1,4 @@
-<? if($loginInfo == 0) {
+<?php if($loginInfo == 0) {
     include_once('../templates/logout.php');
 } else if(!isset($car) || $car == null) { ?>
     <div class="panel panel-default" style="background-color: #ff333b">
@@ -6,8 +6,8 @@
             <h3 class="lead" style="color: #ffccc6">No car with this ID found!</h3>
         </div>
     </div>
-<? } else { ?>
-    <? function getColor($stock) {
+<?php } else { ?>
+    <?php function getColor($stock) {
         $color = 'danger';
 
         if($stock > 50){
@@ -35,7 +35,7 @@
                     <legend>Rent <?= $car['name'] ?></legend>
                     <img src="<?= $car['pic'] ?>" class="img-responsive" style="margin-bottom: 20px;" />
 
-                    <?
+                    <?php
 
                     $hourMode = 'checked'; $dayMode = ''; $kmMode = '';
                     $rate = $car['rate_by_hour'];
@@ -65,7 +65,7 @@
                     ?>
 
                     <?= "<h5 class=\"text-$color text-center\" >Stock : $stock </h5>"; ?>
-                    <? if ($car['stock'] > 0) { ?>
+                    <?php if ($car['stock'] > 0) { ?>
                     <div style="display: none;">
                         <input id="hour" value="<?=$car['rate_by_hour']?>" />
                         <input id="day" value="<?=$car['rate_by_day']?>" />
@@ -115,12 +115,12 @@
                         </div>
                     </div>
 
-                    <? } else { ?>
+                    <?php } else { ?>
                         <h5 class="text-danger text-center">Car out of stock!</h5>
-                    <? } ?>
+                    <?php } ?>
                 </fieldset>
             </form>
-            <?
+            <?php
             if(isset($errors)) {
                 foreach ($errors as $error) {
                     echo "<div class=\"alert alert-dismissible alert-danger fade in\">\n" .
@@ -153,4 +153,4 @@
             refresh();
         });
     </script>
-<? } ?>
+<?php } ?>
