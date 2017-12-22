@@ -8,11 +8,19 @@
 ### carjack
 Carjack is a simple car rental web app made using PHP and MySQL following MVP and Object Oriented design pattern!
 
+**NOTE** - *The code is not suited for production and was developed as a personal and college assignment in a week* 
+
 ### ER Diagram
 
 ![](er_diagram.png)
 
 The relational database should be configured this way
+
+### SQL
+
+DDL and initial configuration is present in [migrate_00.sql](migrate_00.sql) and [migrate_01.sql](migrate_01.sql) respectively
+
+Admin Login and Password : `admin` - `password`
 
 ### Screenshots
 ![](screenshots/ss1.png)
