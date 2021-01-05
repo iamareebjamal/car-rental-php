@@ -6,7 +6,7 @@
             <h5><strong><?=$rental['first_name'] . " " . $rental['last_name']?></strong></h5>
             rented
             <div>
-                <a href="/car/<?=$rental['car_id']?>"><img src="<?=$rental['pic']?>" class="img-thumbnail" style="height: 190px" /></a><br>
+                <a href="/car/<?=$rental['car_id']?>"><img alt="thumbnail" src="<?=$rental['pic']?>" class="img-thumbnail" style="height: 190px" /></a><br>
                 <h5><?=$rental['name']?></h5>
             </div>
             for  <h6 style="display: inline"><?=$rental['value'] . " " . $rental['mode'] ?></h6><br>

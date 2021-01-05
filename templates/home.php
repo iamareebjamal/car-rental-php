@@ -29,7 +29,7 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <h4><?= $car['name'] ?></h4>
-                    <img src="<?= $car['pic'] ?>" class="img-responsive" style="height: 160px;"/>
+                    <img alt="car" src="<?= $car['pic'] ?>" class="img-responsive" style="height: 160px;"/>
 
                     <?php
                     $stock = $car['stock'];
