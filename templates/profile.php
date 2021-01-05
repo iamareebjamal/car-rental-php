@@ -6,7 +6,7 @@
             <div class="text-center">
                 <h3><?= $user['first_name'] . " " . $user['last_name'] ?></h3>
 
-                <img src="<?= $user['avatar'] ?>" style="height: 200px; width:200px;"/>
+                <img alt="avatar" src="<?= $user['avatar'] ?>" style="height: 200px; width:200px;"/>
             </div>
             <br>
             <div class="col-lg-1"></div>

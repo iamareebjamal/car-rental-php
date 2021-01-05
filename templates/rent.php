@@ -33,7 +33,7 @@
             <form class="form-horizontal" method="post" action="">
                 <fieldset>
                     <legend>Rent <?= $car['name'] ?></legend>
-                    <img src="<?= $car['pic'] ?>" class="img-responsive" style="margin-bottom: 20px;" />
+                    <img alt="car" src="<?= $car['pic'] ?>" class="img-responsive" style="margin-bottom: 20px;" />
 
                     <?php
 

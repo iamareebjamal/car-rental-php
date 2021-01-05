@@ -21,7 +21,7 @@
     <div class="panel panel-default">
         <div class="panel-body text-center">
             <h5><?= $car['name'] ?></h5>
-            <img src="<?= $car['pic'] ?>" class="img-responsive"/>
+            <img alt="car" src="<?= $car['pic'] ?>" class="img-responsive"/>
             <br>
 
             <p class="lead text-left" style="margin: 10px;"><?= str_replace('\n', '<br>', $car['info']) ?></p>

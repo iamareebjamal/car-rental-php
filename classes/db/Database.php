@@ -18,7 +18,7 @@ class Database {
             $this->db = new PDO(
                 'mysql:host=localhost;dbname=carjack;charset=utf8',
                 'root',
-                'root');
+                'password');
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->db->setAttribute(PDO::ATTR_EMULATE_PREPARES, true);
         } catch (PDOException $pdo) {
