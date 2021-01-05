@@ -1,6 +1,8 @@
 ## Car Rental System : carjack
 [![Codacy grade](https://img.shields.io/codacy/grade/442c898ff2c64dc9956a214bbc9c5b80.svg)]()
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)  
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=LucasLelaidier_car-rental-php&metric=alert_status)](https://sonarcloud.io/dashboard?id=LucasLelaidier_car-rental-php)
+
 > Car Rental Project in PHP
 
 ![Icon](http://res.cloudinary.com/amuroboclub/image/upload/v1488898371/carjack_rvksdf.png)
