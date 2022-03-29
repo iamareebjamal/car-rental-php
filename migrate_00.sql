@@ -63,16 +63,18 @@ CREATE TABLE transaction
   CONSTRAINT transaction_car_id_fk FOREIGN KEY (car_id) REFERENCES cars (_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
+delimiter $$
 CREATE TRIGGER STOCK_UPDATE_DECREASE
 AFTER INSERT
   ON transaction FOR EACH ROW
   BEGIN
     UPDATE cars SET stock = stock - 1 WHERE _id = NEW.car_id;
-  END;
-
+  END
+$$
 CREATE TRIGGER STOCK_UPDATE_INCREASE
 AFTER DELETE
   ON transaction FOR EACH ROW
   BEGIN
     UPDATE cars SET stock = stock + 1 WHERE _id = OLD.car_id;
-  END;
+  END
+$$
